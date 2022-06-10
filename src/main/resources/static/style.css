@@ -28,6 +28,9 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+}
+
+li {
     text-decoration: none;
 }
 
