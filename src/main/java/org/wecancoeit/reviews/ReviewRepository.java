@@ -13,13 +13,15 @@ public class ReviewRepository {
 
     //constructor to handle our database
     public ReviewRepository(){
-        Review alcapurrias = new Review(1L, "Alcapurrias", "https://www.africanbites.com/wp-content/uploads/2017/08/IMG_9913.jpg", "Appetizers", "This delicacy comes with almost any meat protein. Personally I love it with beef. It is very flavorful and i would definitely recommend");
-        Review yellowRiceWithPigeonPeas = new Review(2L, "Yellow Rice with Pigeon Peas", "https://www.cookedbyjulie.com/wp-content/uploads/2015/10/arroz-con-gandules-one-360x360.jpg", "Main Course", "This is my favorite rice EVER, I could eat this everyday and not get tired. It may sound weird because why are the peas even called like that, but they do not taste like your normal peas. 100% would recommend!");
-        Review empanadillas = new Review(3L, "Empanadillas", "https://cdn.sanity.io/images/02sbe50v/content/af65dcb58361293a8f38a6792725d0f98c7747fa-1080x1080.png?w=300&fit=max&auto=format", "Appetizer", "We make this with almost any protein as well, some that are very popular in Puerto Rico are: beef, chicken, pizza, fish, and crab. I am not a fan of the fish and crab but that is just because I am not a fan of that type of protein. I can describe the flavor but these are a must have, definitely try if given the chance");
+        Review alcapurrias = new Review(1L, "Alcapurrias", "/images/alcapurrias.jpg", "Appetizer", "This delicacy comes with almost any meat protein. Personally, I love it with beef. It is very flavorful and i would definitely recommend");
+        Review yellowRiceWithPigeonPeas = new Review(2L, "Yellow Rice with Pigeon Peas", "/images/arrozConGandules.jpg", "Main Course", "This is my favorite rice EVER, I could eat this everyday and not get tired. It may sound weird because why are the peas even called like that, but they do not taste like your normal peas. 100% would recommend!");
+        Review empanadillas = new Review(3L, "Empanadillas", "/images/empanadillas.jpg", "Appetizer", "We make this with almost any protein as well, some that are very popular in Puerto Rico are: beef, chicken, pizza, fish, and crab. I am not a fan of the fish and crab but that is just because I am not a fan of that type of protein. I can describe the flavor but these are a must have, definitely try if given the chance");
+        Review tembleque = new Review(4L, "Tembleque", "/images/tembleque.jpg", "Dessert", "I would say this is one of my favorite desserts growing up. Is creamy, beautiful taste of coconut but not to overpowering and with the cinnamon on top it makes it taste very rich. Definitely worth trying! When I was little I used to hate coconut but i loved this dessert because I was not aware it was made out of coconuts, when my mom told me... it is safe to say that I was shocked and disappointed at myself. Still not in love with coconuts but tembleque has my heart.");
 
         reviewsList.put(alcapurrias.getId(), alcapurrias);
         reviewsList.put(yellowRiceWithPigeonPeas.getId(), yellowRiceWithPigeonPeas);
         reviewsList.put(empanadillas.getId(), empanadillas);
+        reviewsList.put(tembleque.getId(), tembleque);
     }
 
     //constructor for testing purposes only... uses varArgs to add none or as many objects as we want
