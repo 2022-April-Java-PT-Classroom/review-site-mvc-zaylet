@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${reviewModel.title}">A review</title>
+</head>
+<body>
+
+<header>
+    <h1 th:text="${reviewModel.title}">A review</h1>
+</header>
+
+<main>
+    <u>
+        <p><a href="/reviews">Reviews</a></p>
+        <li th:text="${reviewModel.title}"></li>
+    </u>
+    <h2 th:text="${reviewModel.content}"></h2>
+</main>
+
+<footer>
+    <small>&copy Zaylet Feliciano 2022</small>
+</footer>
+
+</body>
+</html>
