@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Rating Puertorican foods</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+
+<header>
+    <h1>Zaylet Rates Puertorican Foods</h1>
+</header>
+
+<main>
+    <ul>
+        <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a></li>
+    </ul>
+</main>
+
+<footer>
+    <small>&copy Zaylet Feliciano 2022</small>
+</footer>
+
+</body>
+</html>
